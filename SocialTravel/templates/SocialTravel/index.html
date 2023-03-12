@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <!-- saved from url=(0022)http://localhost:8000/ -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
-    
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.84.0">
+<html lang="en">
+    <head>
+        {% load static %}
+        
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+        <meta name="generator" content="Hugo 0.84.0">
     <title>Carousel Template · Bootstrap v5.0</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
@@ -15,7 +16,7 @@
     
 
     <!-- Bootstrap core CSS -->
-<link href="./curso_coder_house_files/bootstrap.min.css" rel="stylesheet">
+<link href="{% static "SocialTravel/css/bootstrap.min.css" %}" rel="stylesheet">
 
     <!-- Favicons -->
 <link rel="apple-touch-icon" href="https://getbootstrap.com/docs/5.0/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
@@ -44,7 +45,7 @@
     </style>
 
     <!-- Custom styles for this template -->
-    <link href="./curso_coder_house_files/carousel.css" rel="stylesheet">
+    <link href="{% static "SocialTravel/css/carousel.css" %}" rel="stylesheet">
   </head>
   <body>
     
@@ -176,7 +177,7 @@
       </div>
       <div class="col-md-5 order-md-1">
         
-          <img src="./curso_coder_house_files/cataratas-del-iguazu-misiones.jpeg" height="400" width="400">
+          <img src="{% static "SocialTravel/assets/cataratas-del-iguazu-misiones.jpeg" %}" height="400" width="400">
         
 
       </div>
@@ -198,7 +199,7 @@
 </main>
 
 
-    <script src="./curso_coder_house_files/bootstrap.bundle.min.js"></script>
+    <script src="{% static "SocialTravel/js/bootstrap.bundle.min.js" %}"></script>
 
       
   
