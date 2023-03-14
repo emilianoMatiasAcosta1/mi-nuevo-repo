@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from SocialTravel.views import index, mostrar_posts, agregar_post, buscar_post , mostrar_futbol, agregar_futbol, buscar_futbol
+from SocialTravel.views import index, mostrar_posts, agregar_post, buscar_post , mostrar_futbol, agregar_futbol, buscar_futbol, mostrar_escuela, agregar_escuela, buscar_escuela
 
 urlpatterns = [
     path('', index, name="index"),
@@ -26,4 +26,7 @@ urlpatterns = [
     path('mi-futbol/', mostrar_futbol, name="mis-futbol"),
     path('mi-futbol/agregar', agregar_futbol, name="agregar-futbol"),
     path('mi-futbol/buscar', buscar_futbol, name="buscar-futbol"),
+    path('mi-escuela/', mostrar_escuela, name="mis-escuela"),
+    path('mi-escuela/agregar', agregar_escuela, name="agregar-escuela"),
+    path('mi-escuela/buscar', buscar_escuela, name="buscar-escuela"),
 ]

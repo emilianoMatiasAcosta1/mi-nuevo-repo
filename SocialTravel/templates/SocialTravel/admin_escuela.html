@@ -1,0 +1,22 @@
+{% extends "SocialTravel/base2.html" %}
+
+{% load static %}
+
+{% block principal %}
+
+<h1>Escuela Alfonsina</h1>
+{% if form %}
+<form action="{% url 'agregar-post' %}" method="post">
+    {% csrf_token %}
+    {{form.as_p}}
+    <input type="submit" value="Agregar">
+</form>
+{% endif %}
+
+<ul>
+    {%  for a in Escuela  %}
+    <li> {{escuela.id}} - {{ escuela.carousel_caption_title }} - {{ escuela.heading}}</li>
+    {% endfor %}
+</ul>
+
+{% endblock %}

@@ -1,5 +1,5 @@
 from django import forms
-from SocialTravel.models import Post , Futbol
+from SocialTravel.models import Post , Futbol, Escuela
 
 class PostForm(forms.ModelForm):
     class Meta:
@@ -11,3 +11,9 @@ class FutbolForm(forms.ModelForm):
     class Meta:
         model = Futbol
         fields = '__all__'        
+
+
+class EscuelaForm(forms.ModelForm):
+    class Meta:
+        model = Escuela 
+        fields = '__all__'                

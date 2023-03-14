@@ -51,24 +51,24 @@
 <header>
   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="https://getbootstrap.com/docs/5.0/examples/carousel/#">Primera Division</a>
+      <a class="navbar-brand" href="https://getbootstrap.com/docs/5.0/examples/carousel/#">Escuela Alfonsina</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav me-auto mb-2 mb-md-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="{% url  'index' %}">Equipo</a>
+            <a class="nav-link active" aria-current="page" href="{% url  'index' %}">Nosotros</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{% url 'mis-posts' %}">Estadisticas</a>
+            <a class="nav-link" href="{% url 'mis-posts' %}">Informacion</a>
           </li>
           <!-- <li class="nav-item">
             <a class="nav-link disabled" href="https://getbootstrap.com/docs/5.0/examples/carousel/#" tabindex="-1" aria-disabled="true">Disabled</a>
           </li> -->
         </ul>
         <form class="d-flex" action="{% url 'buscar-post' %}">
-          <input class="form-control me-2" name="criterio" type="search" placeholder="Buscar Equipo" aria-label="Buscar">
+          <input class="form-control me-2" name="criterio" type="search" placeholder="Buscar Alumno" aria-label="Buscar">
           <button class="btn btn-outline-success" type="submit">Buscar</button>      
         </form>
       </div>

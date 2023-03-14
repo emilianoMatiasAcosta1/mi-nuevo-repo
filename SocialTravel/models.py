@@ -19,3 +19,15 @@ class Futbol(models.Model):
 
     def __str__(self):
         return f"{self.id} - {self.Ganados}"
+    
+
+
+
+class Escuela(models.Model):
+    Alumno = models.CharField(max_length=30)
+    Division = models.CharField(max_length=80)
+    Maestro = models.CharField(max_length=15)
+    Preceptor = models.CharField(max_length=120)
+
+    def __str__(self):
+        return f"{self.id} - {self.Alumno}"    
