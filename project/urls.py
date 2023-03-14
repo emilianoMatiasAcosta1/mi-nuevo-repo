@@ -15,9 +15,15 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from SocialTravel.views import index
+from SocialTravel.views import index, mostrar_posts, agregar_post, buscar_post , mostrar_futbol, agregar_futbol, buscar_futbol
 
 urlpatterns = [
-    path("", index, name="index"),
+    path('', index, name="index"),
     path('admin/', admin.site.urls),
+    path('mis-posts/', mostrar_posts, name="mis-posts"),
+    path('mis-posts/agregar', agregar_post, name="agregar-post"),
+    path('mis-posts/buscar', buscar_post, name="buscar-post"),
+    path('mi-futbol/', mostrar_futbol, name="mis-futbol"),
+    path('mi-futbol/agregar', agregar_futbol, name="agregar-futbol"),
+    path('mi-futbol/buscar', buscar_futbol, name="buscar-futbol"),
 ]

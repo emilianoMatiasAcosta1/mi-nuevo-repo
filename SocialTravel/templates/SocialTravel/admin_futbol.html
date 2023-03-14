@@ -1,0 +1,22 @@
+{% extends "SocialTravel/base1.html" %}
+
+{% load static %}
+
+{% block principal %}
+
+<h1>Futbol Argentino</h1>
+{% if form %}
+<form action="{% url 'agregar-post' %}" method="post">
+    {% csrf_token %}
+    {{form.as_p}}
+    <input type="submit" value="Agregar">
+</form>
+{% endif %}
+
+<ul>
+    {%  for f in Futbol  %}
+    <li> {{futbol.id}} - {{ futbol.carousel_caption_title }} - {{ futbol.heading}}</li>
+    {% endfor %}
+</ul>
+
+{% endblock %}
